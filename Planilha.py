@@ -1,12 +1,12 @@
 import openpyxl
 
-book = openpyxl.workbook()
+book = openpyxl.Workbook()
 
-print(book.sheetname)
+print(book.sheetnames)
 
-book.create_sheet("Meus computadores")
+book.create_sheet("Computadores")
 
-computadores_page = book['Computadores']
+computadores_page = book["Computadores"]
 computadores_page.append(["Eletrônica", "Memória ram", "preço"])
 
 computadores_page.append(["Computador 1", "8gb ram", "R$ 2500"])
